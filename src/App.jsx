@@ -15,9 +15,9 @@ function App() {
         </div>
       </div>
       <div className='card'>
-        <a className='btn' rel='noreferrer' target="_blank" href="https://wa.me/552197748-0988">ORÇAMENTO</a>
+        <a className='btn' rel='noreferrer' target="_blank" href="whatsapp://send?&phone=+552197748-0988">ORÇAMENTO</a>
         <a className='btn' rel='noreferrer' target="_blank" href="https://www.instagram.com/laura_personalizados1/">INSTAGRAM</a>
-        <a className='btn' rel='noreferrer' target="_blank" href="#">TIKTOK</a>
+        {/* <a className='btn' rel='noreferrer' target="_blank" href="#">TIKTOK</a> */}
         <a className='btn' rel='noreferrer' target="_blank" href="http://shopee.com.br/laura.barbeto">SHOPEE</a>
       </div>
       <div className='rodape'>
