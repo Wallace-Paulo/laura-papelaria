@@ -1,0 +1,185 @@
+/* GERAL */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden !important;
+}
+
+*{
+  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #371a10;
+}
+
+/* IMAGEM */
+
+.img {
+  width: 180px !important;
+  margin-bottom: -20px;
+  z-index: 999;
+}
+
+
+/* TITULO */
+
+.title {
+  font-family: "Black And White Picture";
+  font-weight: 400;
+  font-size: 32px;
+  color: #c56682;
+}
+
+.info-text p {
+  font-size: 18px !important;
+  margin-top: -20px !important;
+  letter-spacing: 05px;
+}
+
+/* BUTTON  */
+
+.btn {
+  border-radius: 8px;
+  padding: 10px 120px;
+  font-size: 40px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background: #f3aec1;
+  color: #fff;
+  font-weight: 800;
+}
+
+.btn:hover {
+  background: rgb(212, 130, 154);
+}
+
+/* TEXT */
+
+.info-text {
+  margin-bottom: 100px;
+}
+
+.info-text p {
+  margin-top: -30px;
+  font-size: 21px;
+}
+
+/* CARD */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rodape {
+  margin-top: 100px;
+}
+
+/* BLUR  */
+
+.blur {
+  width: 150px;
+  height: 150px;
+  background-color: #f3aec1;
+  filter: blur(60px);
+  position: absolute;
+  z-index: 1;
+  top: -80px !important;
+  left: -40px !important;
+}
+
+.blur2 {
+  width: 150px;
+  height: 150px;
+  background-color: #f3aec1;
+  filter: blur(60px);
+  position: absolute;
+  z-index: 1;
+  bottom: -90px;
+  right: -60px !important;
+}
+
+
+/* OTIMIZAÇÃO MOBILE */
+
+@media (max-width: 430px) {
+  body {
+    overflow: hidden;
+  }
+
+    .conteudo { 
+      z-index: 999;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blur {
+      /* display: none; */
+      left: 50px;
+      z-index: 1;
+    }
+
+    .blur2 {
+      right: 50px;
+    }
+
+    .btn {
+      padding: 5px 20px;
+    
+    }
+    
+    .info-text {
+      font-size: 10px;
+      margin-bottom: 40px;
+      
+    }
+
+    .info-text p {
+      font-size: 13px;
+    }
+
+    .img {
+      width: 150px;
+    }
+
+    .rodape {
+      font-size: 13px !important;
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    body {
+      overflow-y: hidden !important;
+      overflow-x: hidden !important;
+    }
+    .title {
+      font-size: 25px;
+    }
+    
+    .info-text p {
+      font-size: 14px !important;
+
+    }
+
+    .img {
+      width: 150px !important;
+    }
+
+    .btn {
+      font-size: 25px;
+    }
+
+    .blur {
+      top: -80 !important;
+      left: -100 !important;
+    }
+
+    .blur2 {
+      right: 50px;
+      bottom: -10;
+    }
+  }
